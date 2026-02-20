@@ -1,1 +1,1 @@
-# Bethalehem_Baptist_Church.com
+# www.BethalehemBaptistChurch.com
