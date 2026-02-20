@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Admin Panel</title>
+<title>Admin Panel - Bethalehem Baptist Church</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <div class="container">
 <h2>Upload Sermon</h2>
-
-<input type="text" id="stitle" placeholder="Title">
-<textarea id="sdesc" placeholder="Description"></textarea>
+<input type="text" id="stitle" placeholder="Sermon Title"><br>
+<textarea id="sdesc" placeholder="Description"></textarea><br>
 
 <select id="scategory">
-<option>Sunday</option>
-<option>Youth</option>
-<option>Special</option>
-</select>
+<option value="Sunday">Sunday</option>
+<option value="Youth">Youth</option>
+<option value="Special">Special</option>
+</select><br>
 
 <label>
-<input type="checkbox" id="sfeatured">
- Featured
-</label>
+<input type="checkbox" id="sfeatured"> Featured
+</label><br>
 
-<input type="file" id="sfile">
-<button onclick="uploadSermon()">Upload</button>
+<input type="file" id="sfile" accept=".pdf,.doc,.docx,.mp3,.mp4"><br>
+<button onclick="uploadSermon()">Upload Sermon</button>
 
 <hr>
 
-<h2>Upload Event</h2>
-<input type="text" id="etitle" placeholder="Event Title">
-<textarea id="edesc"></textarea>
-<input type="date" id="edate">
+<h2>Add Event</h2>
+<input type="text" id="etitle" placeholder="Event Title"><br>
+<textarea id="edesc" placeholder="Event Description"></textarea><br>
+<input type="date" id="edate"><br>
 <button onclick="addEvent()">Add Event</button>
 
 <hr>
 
 <h2>Upload Gallery Image</h2>
-<input type="file" id="gfile">
+<input type="file" id="gfile"><br>
 <button onclick="uploadImage()">Upload Image</button>
 
 <hr>
@@ -50,4 +48,4 @@
 <script type="module" src="js/admin.js"></script>
 <script type="module" src="js/backup.js"></script>
 </body>
-</html>
+ </html>
