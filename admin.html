@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Panel</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+<h2>Upload Sermon</h2>
+
+<input type="text" id="stitle" placeholder="Title">
+<textarea id="sdesc" placeholder="Description"></textarea>
+
+<select id="scategory">
+<option>Sunday</option>
+<option>Youth</option>
+<option>Special</option>
+</select>
+
+<label>
+<input type="checkbox" id="sfeatured">
+ Featured
+</label>
+
+<input type="file" id="sfile">
+<button onclick="uploadSermon()">Upload</button>
+
+<hr>
+
+<h2>Upload Event</h2>
+<input type="text" id="etitle" placeholder="Event Title">
+<textarea id="edesc"></textarea>
+<input type="date" id="edate">
+<button onclick="addEvent()">Add Event</button>
+
+<hr>
+
+<h2>Upload Gallery Image</h2>
+<input type="file" id="gfile">
+<button onclick="uploadImage()">Upload Image</button>
+
+<hr>
+
+<h2>Export Backup</h2>
+<button onclick="exportBackup()">Download JSON Backup</button>
+
+</div>
+
+<script type="module" src="js/admin.js"></script>
+<script type="module" src="js/backup.js"></script>
+</body>
+</html>
