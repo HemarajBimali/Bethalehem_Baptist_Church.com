@@ -1,19 +1,15 @@
-import { initializeApp } from 
-"https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-import { getAuth } from 
-"https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
-import { getFirestore } from 
-"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
-import { getStorage } from 
-"https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+import { getAuth } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+import { getStorage } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js";
 
 const firebaseConfig = {
-  apiKey: "YOUR_KEY",
-  authDomain: "YOUR_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_BUCKET",
-  messagingSenderId: "YOUR_MSG_ID",
-  appId: "YOUR_APP_ID"
+    apiKey: "YOUR_FIREBASE_API_KEY",
+    authDomain: "YOUR_FIREBASE_AUTH_DOMAIN",
+    projectId: "YOUR_FIREBASE_PROJECT_ID",
+    storageBucket: "YOUR_FIREBASE_STORAGE_BUCKET",
+    messagingSenderId: "YOUR_FIREBASE_SENDER_ID",
+    appId: "YOUR_FIREBASE_APP_ID"
 };
 
 const app = initializeApp(firebaseConfig);
